@@ -1,7 +1,7 @@
 window.onload = function () {
   let menu = document.getElementById("menu");
   let menuBottom = 100; // пограничное значения отступа от верхнего края при прокрутке
-  let array = document.getElementById("up");
+  let arrow = document.getElementById("up");
   window.onscroll = function () {
     if (document.documentElement.scrollTop < menuBottom) {
       // или document.body.scrollTop > menuBottom
@@ -11,9 +11,9 @@ window.onload = function () {
     }
 
     if (document.documentElement.scrollTop < menuBottom) {
-      array.classList.add("fade");
+      arrow.classList.add("fade");
     } else {
-      array.classList.remove("fade");
+      arrow.classList.remove("fade");
     }
   };
 };
